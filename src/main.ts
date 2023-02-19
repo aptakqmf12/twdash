@@ -1,9 +1,8 @@
-const f = function Foo() {
-  console.log('?');
-};
-const g = function BB() {
-  console.log('?');
-};
-const h = function CC() {
-  console.log('?');
-};
+function sum(a:number, b:number) {
+  return a + b;
+}
+function mul(a:number, b:number) {
+  return a * b;
+}
+
+export { sum, mul };
