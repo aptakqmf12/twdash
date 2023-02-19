@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target" : "ES2015",
+    "module": "system",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "strict": true,
+    "outDir": "dist",
+    "jsx" : "preserve"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"],
+
+}
