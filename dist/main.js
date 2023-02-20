@@ -1,11 +1,8 @@
-"use strict";
-const f = function Foo() {
-    console.log('?');
-};
-const g = function BB() {
-    console.log('?');
-};
-const h = function CC() {
-    console.log('?');
-};
+function sum(a, b) {
+    return a + b;
+}
+function mul(a, b) {
+    return a * b;
+}
+export { sum, mul };
 //# sourceMappingURL=main.js.map
