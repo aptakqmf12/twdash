@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['airbnb-base', 'airbnb-typescript/base', 'eslint:recommended', 'plugin:@typescript-eslint/recommended', "jest"],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'eslint:recommended', 'plugin:@typescript-eslint/recommended', "jest", "prettier", "plugin:prettier/recommended"],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -11,7 +11,7 @@ module.exports = {
     sourceType: 'module',
     
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     'import/extensions': [
       'error',
@@ -23,10 +23,14 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    // jest
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error"
+    "jest/valid-expect": "error",
+    // prettier
+    "prettier/prettier": "error",
+
   },
 };
