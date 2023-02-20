@@ -1,15 +1,16 @@
-function sum(a:number, b:number) {
+function sum(a:number, b:   number) {
   return a + b;
 }
-function mul(a:number, b:number) {
+function   mul(a:number, b  :number) {
+ 
+   
 
+     return      a    *   b
+}
+ 
+const foo          = () => {
   
-  return a * b;
 }
 
-const foo = () => {
-  
-}
 
-
-export { sum, mul };
+export {  sum, mul };
