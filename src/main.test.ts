@@ -1,4 +1,3 @@
-import { test, expect } from "@jest/globals";
 import { sum } from "./main";
 
 test("1 + 2는 3", () => {
