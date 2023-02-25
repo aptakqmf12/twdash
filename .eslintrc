@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true // jest 사용
+  },
+  // extends는 eslint-config-prettier로 eslint와 충돌부분을 비활성화
+  "extends": ["plugin:@typescript-eslint/recommended", "airbnb-base", "airbnb-typescript/base", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  // plugins eslint-plugin-prettier로 prettier을 적용
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {},
+  "ignorePatterns": ["./tsconfig.json", "./jest.config.json", ".eslintrc"]
+}
